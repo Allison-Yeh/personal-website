@@ -1,5 +1,5 @@
-
-@font-face {
+/* for local computer */
+/* @font-face {
     font-family: "Lalezar";
     src: url("/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
          url("/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
@@ -15,7 +15,27 @@ src: url("/fonts/troika/troika.woff2") format("woff2"),
     font-family: "Clear Sans";
     src: url("/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
         url("/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    } */
+
+/* for server */
+@font-face {
+    font-family: "Lalezar";
+    src: url("https://allison-yeh.github.io/personal-website/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+            url("https://allison-yeh.github.io/personal-website/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
     }
+    
+@font-face {
+font-family: "Troika";
+src: url("https://allison-yeh.github.io/personal-website/fonts/troika/troika.woff2") format("woff2"),
+        url("https://allison-yeh.github.io/personal-website/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("https://allison-yeh.github.io/personal-website/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("https://allison-yeh.github.io/personal-website/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    }
+    
 
     
 /* Navbar Styles */  
