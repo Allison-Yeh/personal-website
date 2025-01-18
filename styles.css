@@ -20,20 +20,20 @@ src: url("/fonts/troika/troika.woff2") format("woff2"),
 /* for server */
 @font-face {
     font-family: "Lalezar";
-    src: url("https://allison-yeh.github.io/personal-website/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
-            url("https://allison-yeh.github.io/personal-website/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+    src: url("/personal-website/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+            url("/personal-website/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
     }
     
 @font-face {
 font-family: "Troika";
-src: url("https://allison-yeh.github.io/personal-website/fonts/troika/troika.woff2") format("woff2"),
-        url("https://allison-yeh.github.io/personal-website/fonts/troika/troika.otf") format("opentype");
+src: url("/personal-website/fonts/troika/troika.woff2") format("woff2"),
+        url("/personal-website/fonts/troika/troika.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Clear Sans";
-    src: url("https://allison-yeh.github.io/personal-website/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
-        url("https://allison-yeh.github.io/personal-website/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    src: url("/personal-website/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/personal-website/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
     }
     
 
@@ -53,7 +53,7 @@ src: url("https://allison-yeh.github.io/personal-website/fonts/troika/troika.wof
     padding: 14px 20px;
     text-decoration: none;
     font-size: 24px;
-    font-family: "Clear Sans";
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
 }
 
 .navbar a:hover {
@@ -65,7 +65,7 @@ body {
     margin: 0; 
     overflow: hidden; 
     background-color: black; 
-    font-family: "Troika", sans-serif;
+    font-family: "Troika", Arial, Helvetica, sans-serif;
 }
 
 canvas { 
@@ -92,7 +92,7 @@ canvas {
 
 .subtitle {
     font-size: 40px;
-    font-family: "Clear Sans";
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0px 0px 30px rgb(15, 22, 71);
 } 
