@@ -1,0 +1,162 @@
+/* for local computer */
+/* @font-face {
+    font-family: "Lalezar";
+    src: url("/assets/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+         url("/assets/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+  }
+  
+@font-face {
+font-family: "Troika";
+src: url("/assets/fonts/troika/troika.woff2") format("woff2"),
+        url("/assets/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("/assets/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/assets/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    } */
+
+/* for server */
+@font-face {
+    font-family: "Lalezar";
+    src: url("/personal-website/assets/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+            url("/personal-website/assets/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+    }
+    
+@font-face {
+font-family: "Troika";
+src: url("/personal-website/assets/fonts/troika/troika.woff2") format("woff2"),
+        url("/personal-website/assets/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("/personal-website/assets/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/personal-website/assets/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    }
+    
+
+    
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    padding: 10px; /* Add padding inside the navbar */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left of the page */
+    width: 100%; /* Ensure it spans the full width of the page */
+    z-index: 1000; /* Place it above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px; /* Smooth hover effect */
+}
+
+/* Add padding to the body to avoid content being hidden under the navbar */
+body {
+    margin: 0;
+    overflow-y: auto; /* Vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: linear-gradient(0deg, #3fadcb, #005f8f);
+    font-family: "Troika", Arial, Helvetica, sans-serif;
+    color: #333; /* Darker text for better contrast */
+    padding-top: 60px; /* Adjust based on the navbar height */
+    
+}
+
+/* Container for the project boxes */
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; /* Adjust spacing for a balanced layout */
+    padding: 0 5%; /* More breathing room */
+    gap: 30px; /* Space between boxes */
+    margin-bottom: 200px;
+}
+
+canvas {
+    display: body;
+}
+/* Individual project box */
+.project-box {
+    flex: 1; /* Equal widths for all boxes */
+    max-width: 30%; /* Adjust maximum width */
+    padding: 25px;
+    border: none; /* Remove solid border for a cleaner look */
+    border-radius: 12px; /* Smooth, rounded corners */
+    background: linear-gradient(135deg, #ffcbf0, #ffd8b2); /* Soft gradient background */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+    min-height: 600px; /* Minimum height for shorter content */
+}
+
+/* Hover effect for project box */
+.project-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+/* Container for title and image */
+.title-with-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Small image next to title */
+.project-icon {
+    width: 100px;  /* Slightly smaller for a balanced look */
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+/* Title of the project box */
+.project-box h2 {
+    font-size: 1.6em; /* Larger title */
+    margin: 0;
+    color: #000000; /* Standout color for the title */
+}
+
+/* Styling for projects inside each box */
+.projects p {
+    margin: 15px 0;
+    font-size: 1.1em; /* Slightly larger text */
+    line-height: 1.6; /* Better readability */
+}
+
+/* Bold styling for project titles */
+.projects p strong {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #29496b; /* A standout color */
+}
+
+/* For responsive behavior */
+@media (max-width: 768px) {
+    .project-box {
+        max-width: 90%; /* Full width for small screens */
+        min-height: 350px; /* Adjust height */
+    }
+}
+
+/* Add some padding to the top and bottom of the page */
+body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

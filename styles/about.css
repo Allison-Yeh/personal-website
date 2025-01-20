@@ -1,0 +1,167 @@
+/* for local computer */
+/* @font-face {
+    font-family: "Lalezar";
+    src: url("/assets/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+         url("/assets/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+  }
+  
+@font-face {
+font-family: "Troika";
+src: url("/assets/fonts/troika/troika.woff2") format("woff2"),
+        url("/assets/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("/assets/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/assets/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    } */
+
+/* for server */
+@font-face {
+    font-family: "Lalezar";
+    src: url("/personal-website/assets/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+            url("/personal-website/assets/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+    }
+    
+@font-face {
+font-family: "Troika";
+src: url("/personal-website/assets/fonts/troika/troika.woff2") format("woff2"),
+        url("/personal-website/assets/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("/personal-website/assets/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/personal-website/assets/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    }
+    
+
+    
+/* Navbar Styles */  
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: black; 
+    font-family: "Troika", Arial, Helvetica, sans-serif;
+}
+
+canvas { 
+    display: block; 
+}
+
+
+/* About Me Section */
+/* About Me Section */
+/* Main container for the About Me section */
+.about-me-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 15px; /* Rounded edges for style */
+}
+
+/* Title styling */
+.about-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ffffff; /* Solid white for maximum contrast */
+    text-shadow: 0px 0px 50px rgba(15, 22, 71, 0.8); /* Stronger glow effect */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Flex container for text and image */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Text styling */
+.about-text {
+    flex: 1;
+    font-size: 20px;
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.95); /* Slight transparency for smoother text */
+    text-shadow: 0px 0px 20px rgba(15, 22, 71, 0.7); /* Subtle but defined glow */
+    line-height: 1.8;
+    margin: 0;
+    padding: 10px; /* Add padding for breathing room */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Image styling */
+.about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Deeper shadow for contrast */
+    flex-shrink: 0;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, #3fadcb, #005f8f); /* Subtle gradient for background */
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 60px; /* Reduce title size on small screens */
+    }
+
+    .about-text {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .about-image {
+        margin-top: 20px; /* Add space above the image in vertical layout */
+        width: 80%; /* Allow the image to take more width on smaller screens */
+        max-width: none; /* Remove width constraints */
+    }
+}

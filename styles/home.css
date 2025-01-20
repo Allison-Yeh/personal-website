@@ -1,0 +1,100 @@
+/* for local computer */
+/* @font-face {
+    font-family: "Lalezar";
+    src: url("/assets/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+         url("/assets/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+  }
+  
+@font-face {
+font-family: "Troika";
+src: url("/assets/fonts/troika/troika.woff2") format("woff2"),
+        url("/assets/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("/assets/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/assets/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    } */
+
+/* for server */
+@font-face {
+    font-family: "Lalezar";
+    src: url("/personal-website/assets/fonts/lalezar/Lalezar-Regular.woff2") format("woff2"),
+            url("/personal-website/assets/fonts/lalezar/Lalezar-Regular.otf") format("opentype");
+    }
+    
+@font-face {
+font-family: "Troika";
+src: url("/personal-website/assets/fonts/troika/troika.woff2") format("woff2"),
+        url("/personal-website/assets/fonts/troika/troika.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Clear Sans";
+    src: url("/personal-website/assets/fonts/clear-sans/ClearSans-Bold.woff2") format("woff2"),
+        url("/personal-website/assets/fonts/clear-sans/ClearSans-Bold.ttf") format("opentype");
+    }
+    
+
+    
+/* Navbar Styles */  
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    background-color: black; 
+    font-family: "Troika", Arial, Helvetica, sans-serif;
+}
+
+canvas { 
+    display: block; 
+}
+
+/* Name Styling */
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 250px !important; /* Increased size */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 75px rgb(15, 22, 71);
+    line-height: 0.8; /* Adjust this value to decrease the space between lines */
+}
+
+
+.subtitle {
+    font-size: 40px;
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 30px rgb(15, 22, 71);
+} 
+
