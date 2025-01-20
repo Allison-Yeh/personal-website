@@ -138,6 +138,7 @@ canvas {
     margin: 15px 0;
     font-size: 1.1em; /* Slightly larger text */
     line-height: 1.6; /* Better readability */
+    font-family: "Clear Sans", Arial, sans-serif;
 }
 
 /* Bold styling for project titles */
@@ -145,6 +146,7 @@ canvas {
     font-weight: bold;
     font-size: 1.2em;
     color: #29496b; /* A standout color */
+    font-family: "Clear Sans", Arial, sans-serif;
 }
 
 /* For responsive behavior */
