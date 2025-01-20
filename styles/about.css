@@ -129,6 +129,7 @@ canvas {
 .about-image {
     width: 300px;
     height: auto;
+    transform: translateY(-95px); /* Move the image up */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Deeper shadow for contrast */
     flex-shrink: 0;
