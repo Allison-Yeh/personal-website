@@ -61,6 +61,17 @@ src: url("/personal-website/assets/fonts/troika/troika.woff2") format("woff2"),
     border-radius: 4px;
 }
 
+.linkedin-link {
+    margin-left: auto; /* Pushes the LinkedIn link to the far right */
+}
+
+.linkedin-icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px;
+    margin-right: 0.5em; /* Space between the icon and text */
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+}
+
 
 body { 
     margin: 0; 
