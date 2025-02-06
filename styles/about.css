@@ -177,3 +177,16 @@ body {
         max-width: none; /* Remove width constraints */
     }
 }
+
+
+.center-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.about-image {
+    width: 300px;
+    height: auto;
+}
