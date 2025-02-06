@@ -86,18 +86,15 @@ canvas {
 
 
 /* About Me Section */
-/* About Me Section */
-/* Main container for the About Me section */
+
+/* Main container for "About Me" section */
 .about-me-container {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 15px; /* Rounded edges for style */
+    flex-direction: column; /* Stack title and content vertically */
+    justify-content: flex-start; /* Keeps the title at the top */
+    height: 80vh; /* Reduced height (adjust as needed) */
+    padding: 100px; /* Padding for left and right */
+    box-sizing: border-box; /* Ensures padding is included in the total height */
 }
 
 /* Title styling */
@@ -107,44 +104,45 @@ canvas {
     color: #ffffff; /* Solid white for maximum contrast */
     text-shadow: 0px 0px 50px rgba(15, 22, 71, 0.8); /* Stronger glow effect */
     line-height: 1.2;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
 /* Flex container for text and image */
 .about-content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 60px; /* Space between text and image */
+    flex-wrap: wrap; /* Allows responsiveness */
+    height: calc(80vh - 60px - 40px); /* Adjust height based on reduced container height and padding */
+    box-sizing: border-box;
 }
 
 /* Text styling */
 .about-text {
-    flex: 1;
+    flex: 1; /* Allows text to take available space */
     font-size: 20px;
     font-family: "Clear Sans", Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 0.95); /* Slight transparency for smoother text */
-    text-shadow: 0px 0px 20px rgba(15, 22, 71, 0.7); /* Subtle but defined glow */
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0px 0px 20px rgba(15, 22, 71, 0.7);
     line-height: 1.8;
     margin: 0;
-    padding: 10px; /* Add padding for breathing room */
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for readability */
-    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 /* Image styling */
 .about-image {
     width: 300px;
     height: auto;
-    transform: translateY(-95px); /* Move the image up */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Deeper shadow for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     flex-shrink: 0;
 }
+
 
 /* Body Styling */
 body {
@@ -179,14 +177,5 @@ body {
 }
 
 
-.center-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-}
 
-.about-image {
-    width: 300px;
-    height: auto;
-}
+
